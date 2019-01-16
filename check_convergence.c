@@ -7,7 +7,7 @@ int check_convergence(int m, int n, double**u, double**u_update, double thresh){
 	int convergence = 0;
 	for(i = 0; i < m; i++){
 		for(j = 0; j < n; j++){
-			diff_sum += abs(u[i][j] - u_update[i][j]);
+		  diff_sum += (u[i][j] - u_update[i][j])*(u[i][j]-u_update[i][j]);
 		}
 	}
 	printf("%lf\n", diff_sum);

@@ -21,7 +21,7 @@ void jacobi(int m, int n, int max_iter, double spacing, double** u, double** u_u
 
 				if(i == m-2 && j == n-2){
 
-					convergence = check_convergence(m, n, u, u_update, 10);
+					convergence = check_convergence(m, n, u, u_update, 1);
 					if(convergence == 1){
 						printf("Converged at %d\n", iter);
 						break;

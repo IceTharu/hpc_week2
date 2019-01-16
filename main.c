@@ -7,7 +7,7 @@
 
 
 void main(){
-	double spacing = 0.2;
+	double spacing = 0.002;
 	int max_iter = 100;
 	int m = 2/spacing;
 	int n = 2/spacing;
